@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="../resources/css/my_style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </head>
+
+
+  <body>
+      <h1>Add New Article</h1>
+      <form>
+        <div class=" col-xs-4">
+          <h5 for="title">Article Title</h5>
+          <input type="text" class="form-control" id="title" aria-describedby="title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <h5 for="author">Author Name</h5>
+          <input type="text" class="form-control" id="author" placeholder="Name">
+        </div>
+      </form>
+      <form>
+        <div class="form-row">
+            <div class="col">
+                    <h5 for="file">Upload Files:</h5>
+                    <input type="file" class="form-control-file" id="file">
+            </div>
+            <div class="col">
+                <label for="pages">Pages:</label>
+                <select class="form-control" id="pages">
+                    <option>Academics</option>
+                    <option>Sports</option>
+                    <option>Technology</option>
+                    <option>Politics</option>
+                </select>
+            </div>
+        </div>
+      </form>
+      <div class="form-group">
+        <h3>Article Text</h3>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+      <div class = "form-group">
+          <div class="container">
+              <div class="row">
+                <div class = "col">
+                  <h4>Select Tags</h4>
+                </div>
+                <div class = "col">
+                    <h4>Visibility</h4>
+                  </div>
+              </div>
+              <div class="row">
+                <div class = "col">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">C++</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                      <label class="form-check-label" for="inlineCheckbox3">Java</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                      <label class="form-check-label" for="inlineCheckbox4">Scala</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                      <label class="form-check-label" for="inlineCheckbox5">Perl</label>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Private
+                        </label>
+      
+                    </div>
+                </div>
+                
+              </div>
+              
+          </div>
+      </div>
+        <!-- <form>     
+                <div class="form-group">
+                        <h5 for="exampleInputEmail1">Login to Finish Submitting</h5>
+                </div>
+                <div class="form-row">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form> -->
+        <form>
+            <div class="form-row">
+                <div class="col">
+                  <h5 >Login to Finish Submitting</h5>
+                </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+          </div>
+          <div class = "form-row">
+            <div class="col">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+            </div>
+          </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+          
+        </form>
+    </div>
+  </body>
